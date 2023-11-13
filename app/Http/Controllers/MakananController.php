@@ -18,7 +18,7 @@ class MakananController extends Controller
     public function show($makanan)
     {
         return view("makanan.detail", [
-            "title" => "detail-makanan",
+            "title" => "Detail-Makanan",
             "makanan" => Makanan::find($makanan),
         ]);
     }
