@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MakananController;
 use App\Http\Controllers\MinumanController;
+use App\Http\Controllers\StarbuckController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,7 @@ Route::get('/makanan/detail/{makanan}', [MakananController::class,'show']);
 Route::get('/minuman/all', [MinumanController::class, 'index']);
 
 Route::get('/minuman/detail/{minuman}', [MinumanController::class,'show']);
+
+Route::get('/starbuck/all', [StarbuckController::class, 'index']);
+
+Route::get('/starbuck/detail/{starbucks}', [StarbuckController::class,'show']);

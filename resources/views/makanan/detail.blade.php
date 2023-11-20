@@ -36,7 +36,7 @@
         @endphp
         <tr>
             <td>{{ $no++ }}</td>
-            <td><img src="{{ $makanan->gambar }}" alt="{{ $makanan->nama }}" width="100" height="105"></td>
+            <td><img src=  "{{ $makanan->gambar }}" alt="{{ $makanan->nama }}" width="100" height="105"></td>
             <td>{{ $makanan->nama }}</td>
             <td>{{ $makanan->harga }}</td>
             <td>{{ $makanan->rasa }}</td>
