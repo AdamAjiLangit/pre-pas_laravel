@@ -27,15 +27,16 @@
 </style>
 
 @section('container')
-    <h2>Data Minuman Khas Kalimantan Barat</h2>
+    <h2>Data Minuman Starbuck</h2>
     <table class="table table-dark table-hover">
         <thead>
             <tr>
                 <th>
-                    <th scope="col">Gambar</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Harga</th>
+                    <th scope="col">Deskripsi</th>
                     <th scope="col">Rasa</th>
+                    <th scope="col">Expired</th>
                     <th></th>
                     <th scope="col">Action</th>
                 </th>
@@ -45,15 +46,16 @@
             @php
                 $no = 1;
             @endphp
-            @foreach ($minuman as $drink)
+            @foreach ($starbucks as $drink)
             <tr>
                 <td>{{$no++}}</td>
-                <td><img src="{{ $drink->gambar }}" alt="{{ $drink->nama }}" width="100" height="105"></td>
                 <td>{{$drink->nama}}</td>
                 <td>{{$drink->harga}}</td>
+                <td>{{$drink->deskripsi}}</td>
                 <td>{{$drink->rasa}}</td>
+                <td>{{$drink->expired}}</td>
                 <td>
-                    <th><a type="button" class="button1" href="/minuman/detail/{{$drink->id}}">Detail</a></th>
+                    <th><a type="button" class="button1" href="/starbuck/detail/{{$drink->id}}">Detail</a></th>
                 </td>
             </tr>
             @endforeach

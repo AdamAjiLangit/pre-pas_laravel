@@ -8,6 +8,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/minuman/all">Minuman</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/starbuck/all">Starbuck</a>
+                </li>
             </ul>
         </div>
     </div>

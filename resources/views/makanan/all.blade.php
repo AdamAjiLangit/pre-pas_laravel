@@ -27,7 +27,7 @@
 </style>
 
 @section('container')
-    <h2>Data Makanan Khas Kalimantin Barat</h2>
+    <h2>Data Makanan Khas Kalimantan Barat</h2>
     <table class="table table-dark table-hover">
         <thead>
             <tr>
